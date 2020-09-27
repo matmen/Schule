@@ -1,0 +1,11 @@
+*.aux
+*.fdb*
+*.fls
+*.log
+*.synctex*
+*.ins
+*.sty
+*.dtx
+*.drv
+*temp*
+*.toc

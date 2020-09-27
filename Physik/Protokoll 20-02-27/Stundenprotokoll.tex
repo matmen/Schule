@@ -1,0 +1,61 @@
+\documentclass[12pt, a4paper]{article}
+\usepackage{amsmath}
+
+\begin{document}
+\begin{titlepage}
+    \begin{center}
+        \LARGE{Optisches Gitter} \\
+        \large{Stundenrotokoll} \\
+        \vspace{10mm}
+        \small{Lehrer} \\
+        \large{Herr Dr. Algermissen} \\
+        \vspace{10mm}
+        \small{Zeitraum} \\
+        \large{ 27.02.2020 \\
+                12:45 - 13:15 }\\
+        \vspace{10mm}
+        \small{Fehlende Sch\"uler}\\
+        \large{-}\\
+        \vspace{10mm}
+        \small{Protokollant}\\
+        \large{Mathis Mensing}
+    \end{center}
+\end{titlepage}
+
+\thispagestyle{empty}
+\newpage
+\subsection*{Gesucht}
+Abstand $b$ zwischen den Strichen des optischen Gitters
+
+\subsection*{Gegeben}
+Wellenlänge $\lambda=635nm$\\
+Abstand der projezierten Punkte $a=0,5m$\\
+Abstand vom Gitter zur Projektionsfl\"ache $l=1,16m$
+
+\subsection*{Rechnung}
+$\Delta s = k \lambda$\\
+\\
+\\
+$1.$ \, $\sin\left(\alpha\right) = \frac{\Delta s}{b} \, \Rightarrow \, b = \frac{\Delta s}{\sin\left(\alpha\right)}$; \, $\tan\left(\alpha\right) = \frac{a}{l}$\\
+\\
+$2.$ \, $\alpha = \arctan\left(\frac{a}{l}\right)$\\
+\\
+$3.$ \, $b = \frac{\Delta s}{\sin\left(\alpha\right)} = \frac{k\lambda}{\sin\left(\arctan\left(\frac{a}{l}\right)\right)}$\\
+\\
+\\
+\\
+$\begin{aligned}
+    b &= \frac{1*635*10^{-9}m}{\sin\left(\arctan\left(\frac{0,5m}{1,16m}\right)\right)}\\
+      &= \frac{635*10^{-9}m}{\sin\left(0,407\right)}\\
+      &= \frac{635*10^{-9}m}{0,396}\\
+      &= 1,604*10^{-6}m\\
+      &= 1,604\mu m
+\end{aligned}$
+
+\subsection*{Fehleranalyse}
+Tatsächlicher Wert: $600 mm^{-1} \overset{\wedge}{=} 1,66\mu m = 1,66*10^{-6}m$\\
+Errechneter Wert: $1,604*10^{-6}m$\\
+\\
+Genauigkeit: $\frac{1,604*10^{-6}m}{1,66*10^{-6}m} \overset{\wedge}{=} 96\% \, \Rightarrow \, 4\%$ Fehler
+
+\end{document}
