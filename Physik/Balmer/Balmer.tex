@@ -40,11 +40,11 @@ Das Ziel des Experiments ist es, die Wellenlängen der Emissionsspektrallinien e
 \subsection{Theorie}
 $\Delta s = k * \lambda$ \\
 1: $\sin a = \frac{\Delta s}{g} = \frac{k * \lambda}{g}$ \\
-2: $\tan a = \frac{x}{l}$ \\
-3: $\Rightarrow a = \arctan \frac{x}{l}$ \\\\
+2: $\tan a = \frac{a}{l}$ \\
+3: $\Rightarrow a = \arctan \frac{a}{l}$ \\\\
 3 in 1:\\
-$\sin(\arctan(\frac{x}{l})) = \frac{\lambda}{g}$ \\
-$\lambda = \sin(\arctan(\frac{x}{l})) * g$
+$\sin(\arctan(\frac{a}{l})) = \frac{\lambda}{g}$ \\
+$\lambda = \sin(\arctan(\frac{a}{l})) * g$
 
 \section{Versuchsaufbau}
 \subsection{Materialien}
@@ -129,8 +129,8 @@ Der Abstand $l$ kann nun beliebig oft verändert werden und die neuen Messwerte 
 \end{tabular}
 
 \subsubsection{Wellenlängen}
-$\lambda = \sin(\arctan(\frac{x}{l})) * g$\\
-$\lambda = \sin(\arctan(\frac{x}{l})) * \frac{1mm}{600}$\\\\
+$\lambda = \sin(\arctan(\frac{a}{l})) * g$\\
+$\lambda = \sin(\arctan(\frac{a}{l})) * \frac{1mm}{600}$\\\\
 \textbf{Beispiel:} $l = 720mm$; $x = 580mm$ (rot)\\
 $\lambda = \sin(\arctan(\frac{580mm}{720mm}))*\frac{1mm}{600}$\\
 $\lambda = 622nm$\\
@@ -262,7 +262,7 @@ $\lambda = 622nm$\\
 
 \subsubsection{Lineare Regression}
 \large
-$\sin(\arctan(\frac{x}{l})) = \frac{\lambda}{g} \Rightarrow x = \tan(\arcsin(\frac{\lambda}{g})) * l$ \\\\
+$\sin(\arctan(\frac{a}{l})) = \frac{\lambda}{g} \Rightarrow x = \tan(\arcsin(\frac{\lambda}{g})) * l$ \\\\
 $x(l) = \tan(\arcsin(\frac{\lambda}{g})) * l$ \\
 $f(x) = m_s * x$\\\\
 $m_s = \tan(\arcsin(m_s)) * g$\\
@@ -271,8 +271,8 @@ $\Rightarrow \lambda = \sin(\arctan(m_s)) * g$
 
 \subsubsection{Daten}
 \large
-Mittelwert: $\overline{x} = \frac{\Sigma x_i}{N}$\\
-Varianz (Stichprobenmessung): $\sigma^2 = \frac{\Sigma(x_i-\overline{x})^2}{N-1}$\\
+Mittelwert: $\overline{\lambda} = \frac{\Sigma \lambda_i}{N}$\\
+Varianz (Stichprobenmessung): $\sigma^2 = \frac{\Sigma(x_i-\overline{\lambda})^2}{N-1}$\\
 Standardabweichung: $\sigma = \pm \sqrt{\sigma^2}$
 \normalsize
 
@@ -290,7 +290,7 @@ Standardabweichung: $\sigma = \pm \sqrt{\sigma^2}$
     \hline
     Literaturwert & $656nm$ & $486nm$ & $434nm$ \\
     \hline
-    $\delta$ & $14nm$ & $2nm$ & $0nm$ \\
+    $\Delta$ & $14nm$ & $2nm$ & $0nm$ \\
     \hline
     Abweichung & $2.1\%$ & $0.5\%$ & $0\%$ \\
     \hline
